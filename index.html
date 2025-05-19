@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identificador de Placas</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="front.css">
+  <script src="placasDeTransito.js" defer></script>
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Identificador de Placas</h1>
+    <div class="input-group">
+      <input type="text" id="inputPlaca" maxlength="7" placeholder="Digite a placa (ex: ABC1234)">
+    </div>
+    <button onclick="analisaPlaca()">Verificar Estado</button>
+    <div class="resultado" id="resultado"></div>
+  </div>
 </body>
 </html>
